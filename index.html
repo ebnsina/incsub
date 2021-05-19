@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incsub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="form-container">
+        <div class="form-wrapper">
+          <h2 class="form-title">Let's set up your account</h2>
+          <p class="form-subtitle">
+            Already have an account? <a href="#">Sign in</a>
+          </p>
+          <form>
+            <fieldset class="name-fieldset">
+              <input type="text" name="name" id="name" placeholder="Ebn Sina" />
+              <legend>
+                <label for="name">Your Name</label>
+              </legend>
+              <small class="validation-msg"></small>
+            </fieldset>
+            <fieldset class="email-fieldset">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ebnsina.me@gmail.com"
+              />
+              <legend>
+                <label for="email">Email address</label>
+              </legend>
+              <small class="validation-msg"></small>
+            </fieldset>
+            <fieldset class="type-fieldset">
+              <select name="job" id="job">
+                <option value="" disabled selected>
+                  I would describe my user type as
+                </option>
+
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="marketer">Marketer</option>
+              </select>
+            </fieldset>
+            <fieldset class="pass-fieldset">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="........"
+              />
+
+              <span class="eye-icon"><span class="fas fa-eye"></span></span>
+
+              <legend>
+                <label for="password">Password</label>
+              </legend>
+
+              <small class="validation-msg"></small>
+            </fieldset>
+
+            <div>
+              <button disabled class="button is-primary" type="submit">
+                Next
+              </button>
+            </div>
+
+            <p class="form-agreement">
+              By clicking the "Next" button, you agree to creating a free
+              account, and to <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy.</a>
+            </p>
+          </form>
+        </div>
+        <div class="form-bg">
+          <h2>Welcome!</h2>
+
+          <p>
+            We are behind the WordPress projects WPMU DEV, CampusPress and
+            Edublogs. Incsub is short for 'Incorporated Subversion', which is
+            what we build into everything we make.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

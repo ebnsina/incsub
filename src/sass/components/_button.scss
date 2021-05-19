@@ -1,0 +1,31 @@
+@use '../utils/variables' as var;
+.button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.is-primary {
+  background: var.$primary;
+  color: #fff;
+
+  &:hover {
+    background: darken(var.$primary, 10);
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background-color: var.$gray-bg;
+  color: var.$gray-text;
+
+  &:hover {
+    background-color: var.$gray-bg;
+    color: var.$gray-text;
+  }
+}
